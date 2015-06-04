@@ -1,0 +1,15 @@
+'use strict'
+
+angular.module('auth', [])
+
+.service('autentication', function () {
+  var userIsAuthenticated = false;
+
+  this.setUserAuthenticated = function(value){
+    userIsAuthenticated = value;
+  };
+
+  this.getUserAuthenticated = function(){
+    return userIsAuthenticated;
+  }
+});

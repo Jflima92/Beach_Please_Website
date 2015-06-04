@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html ng-app="ctrlApp">
+<head>
+  <title>Tuna de Medicina do Porto</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+
+  <link rel="stylesheet" href="css/skel.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/panel.css" />
+  <link rel="stylesheet" href="css/style-desktop.css" />
+
+<link rel="stylesheet" href="bower_components/flexslider/flexslider.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+<body class="dash" data-ng-controller="panelController">
+
+  <tabset justified ="true">
+    <tab heading="Visão Geral">
+      <div class="container">
+        <div class="jumbotron">
+          <h2>Visão Geral</h2>
+          <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+        </div>
+      </div>
+    </tab>
+    <tab heading="Gestor de Notícias">Overview</tab>
+    <tab heading="Gestor de Eventos">Overview</tab>
+    <tab heading="Gestor da Galeria">Overview</tab>
+    <tab heading="Sair" select= "logOut()">Overview</tab>
+
+  </tabset>
+
+  </body>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js" ng-module ='ngCookies'></script>
+  <script src ="bower_components/angular-route/angular-route.min.js" ng-module ='routeProvider'></script>
+  <script src ="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" ng-module ='ui-bootstrap'></script>
+  <script src="controllers/panelCtrl.js"></script>
+  <script src="services/js/autenticationService.js"></script>
+  </html>

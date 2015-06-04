@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+
+<html ng-app="medApp">
+<head>
+	<title>Tuna de Medicina do Porto</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/jquery.dropotron.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+	</noscript>
+	<link rel="stylesheet" href="bower_components/flexslider/flexslider.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+<body class="homepage" data-ng-controller="mainController">
+
+<!-- Header -->
+<div id="header-wrapper" class="wrapper">
+	<div id="header">
+
+		<!-- Logo -->
+		<div id="logo">
+			<h1>Beach Please</h1>
+			<p>Your beach social feed</p>
+		</div>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li class="current"><a href="index.html">Home</a></li>
+				<li><a href="" data-ng-click ="moveToATuna()" du-smooth-scroll>The Application</a></li>
+				<li><a href="" data-ng-click ="moveToNoticias()" du-smooth-scroll>Features</a></li>
+				<li><a href="" data-ng-click ="moveToEventos()" du-smooth-scroll>Screenshots</a></li>
+				<li><a href="" data-ng-click ="moveToMusicas()" du-smooth-scroll>Live Demonstration</a></li>
+				<li><a href="" data-ng-click ="moveToGaleria()" du-smooth-scroll>Galeria</a></li>
+				<li><a href="" data-ng-click ="moveToContactos()" du-smooth-scroll>Contacts</a></li>
+				<li><a href="" data-ng-click ="moveToQuemSomos()" du-smooth-scroll>Who are we?</a></li>
+			</ul>
+		</nav>
+
+	</div>
+</div>
+
+
+<!-- Main -->
+<div class="wrapper style2" id="noticias">
+	<div class="title">The Application</div>
+	<div id="main" class="container">
+
+		<!-- Image
+            <a href="#" class="image featured">
+                <img src="images/pic01.jpg" alt="" />
+            </a>
+
+        <!-- Features
+            <section id="features">
+                <header class="style1">
+                    <h2>Dolor consequat feugiat amet veroeros</h2>
+                    <p>Feugiat dolor nullam orci pretium phasellus justo</p>
+                </header>
+                <div class="feature-list">
+                    <div class="row">
+                        <div class="6u">
+                            <section>
+                                <h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                        <div class="6u">
+                            <section>
+                                <h3 class="icon fa-refresh">Lorem ipsum dolor sit veroeros</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="6u">
+                            <section>
+                                <h3 class="icon fa-picture-o">Pretium phasellus justo lorem</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                        <div class="6u">
+                            <section>
+                                <h3 class="icon fa-cog">Tempus sed pretium orci</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="6u">
+                            <section>
+                                <h3 class="icon fa-wrench">Aliquam consequat et feugiat</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                        <div class="6u">
+                            <section>
+                                <h3 class="icon fa-check">Dolore laoreet aliquam mattis</h3>
+                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <ul class="actions actions-centered">
+                    <li><a href="#" class="button style1 big">Get Started</a></li>
+                    <li><a href="#" class="button style2 big">More Info</a></li>
+                </ul>
+            </section> -->
+		<a href="" class="icon other fa-arrow-up"  data-ng-click="toTop()" du-smooth-scroll></span> Go to Top</a>
+	</div>
+</div>
+
+<!-- Intro -->
+<div id="intro-wrapper" class="wrapper style1">
+	<div class="title" >Features</div>
+	<section id="intro" class="container">
+		<!-- <p class="style1">So in case you were wondering what this is all about ...</p>
+        <p class="style2">
+            Escape Velocity is a free responsive<br class="mobile-hide" />
+            site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+        </p>
+        <p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
+        free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
+        your personal or commercial projects &ndash; just be sure to credit us!</p>
+        <ul class="actions">
+            <li><a href="#" class="button style3 big">Proceed</a></li>
+        </ul> -->
+
+		<a href="" class="icon fa-arrow-up" data-ng-click="toTop()"></span> Go to Top</a>
+
+
+	</section>
+</div>
+
+
+<!-- Highlights -->
+<div class="wrapper style3" id ="eventos">
+	<div class="title">Screenshots</div>
+	<div id="highlights" class="container">
+		<!-- <div class="row 150%">
+            <div class="4u">
+                <section class="highlight">
+                    <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                    <h3><a href="#">Aliquam diam consequat</a></h3>
+                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button style1">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="4u">
+                <section class="highlight">
+                    <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                    <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button style1">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="4u">
+                <section class="highlight">
+                    <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                    <h3><a href="#">Mattis tempus lorem</a></h3>
+                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button style1">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>-->
+		<a href="" class="icon other fa-arrow-up" data-ng-click="toTop()" du-smooth-scroll></span> Go to Top</a>
+	</div>
+</div>
+
+<!-- Músicas -->
+<div class="wrapper style2" id ="musicas">
+	<div class="title">Live Demonstration</div>
+	<div id="musics" class="container">
+
+		<audio media-player="mediaPlayer" data-playlist="audioPlaylist"></audio>
+
+		<div class="btn" ng-click="mediaPlayer.play()">
+			<span>Simple Play</span>
+			<i class="fa fa-play"></i>
+		</div>
+		<div class="btn" ng-click="mediaPlayer.playPause()">
+			<i class="fa fa-play" ng-class="{ 'fa-pause': mediaPlayer.playing, 'fa-play': !mediaPlayer.playing }"></i>
+		</div>
+		<div class="btn" ng-click="mediaPlayer.next()">
+			<span>Next</span>
+			<i class="fa fa-step-forward"></i>
+		</div>
+		<div class="btn" ng-click="mediaPlayer.prev()">
+			<i class="fa fa-step-backward"></i>
+			<span>Prev</span>
+		</div>
+		<div class="btn btn-noclick">
+			<span>currentTrack: <span class="badge ng-binding">{{mediaPlayer.currentTrack}}</span></span>
+		</div>
+		<div class="btn btn-noclick">
+			<span><i class="fa fa-clock-o"></i>: <span class="badge ng-binding">{{mediaPlayer.formatTime}}</span></span>
+		</div>
+		<div class="btn btn-noclick">
+			<span>volume: <span class="badge ng-binding">{{mediaPlayer.volume * 100 | number:0 }}%</span></span>
+		</div>
+		<div class="btn" ng-click="mediaPlayer.setVolume(mediaPlayer.volume - 0.1)">
+			<span><i class="fa fa-volume-down"></i></span>
+		</div>
+		<div class="btn" ng-click="mediaPlayer.setVolume(mediaPlayer.volume + 0.1)">
+			<span><i class="fa fa-volume-up"></i></span>
+		</div>
+		<div class="progress" ng-click="mediaPlayer.seek(mediaPlayer.duration * seekPercentage($event))">
+			<div style="" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" ng-style="{ width: mediaPlayer.currentTime*100/mediaPlayer.duration + '%' }"></div>
+			<div class="time" ng-show="mediaPlayer.formatTime">
+				<span class="ng-binding">{{mediaPlayer.formatTime}}</span><b>/</b><span class="ng-binding">{{mediaPlayer.formatDuration}}</span>
+			</div>
+		</div>
+
+		<table class="table table-hover table-rounded table-cursor">
+			<thead>
+			<th>#</th>
+			<th>Artist</th>
+			<th>Title</th>
+			</thead>
+
+			<tbody>
+			<tr ng-repeat="song in audioPlaylist" ng-click="mediaPlayer.playPause($index)" ng-class="{ active: mediaPlayer.playing && mediaPlayer.currentTrack-1 === $index }">
+				<td>{{ $index+1 }}</td>
+				<td>{{ song.artist }}</td>
+				<td>{{ song.title }}</td>
+			</tr>
+			</tbody>
+		</table>
+
+			<!-- <div class="row 150%">
+            <div class="4u">
+                <section class="highlight">
+                    <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                    <h3><a href="#">Aliquam diam consequat</a></h3>
+                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button style1">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="4u">
+                <section class="highlight">
+                    <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                    <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button style1">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="4u">
+                <section class="highlight">
+                    <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                    <h3><a href="#">Mattis tempus lorem</a></h3>
+                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button style1">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>-->
+		<a href="" class="icon other fa-arrow-up" data-ng-click="toTop()" du-smooth-scroll></span> Go to Top</a>
+	</div>
+</div>
+
+<!-- Footer -->
+<div id="footer-wrapper" class="wrapper">
+	<div class="title">Galery</div>
+	<div id="footer" class="container">
+		<header class="style1">
+			<!-- <h2>Ipsum sapien elementum portitor?</h2>
+            <p>
+                Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
+                Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat.
+            </p>-->
+
+			<flex-slider class="carousel" slide="s in slides" animation="slide"  animation-loop=false easing="swing" item-width="400" item-margin="5" minItems = "4" maxItems="4">
+				<li>
+					<img data-ng-src="{{s}}">
+				</li>
+			</flex-slider>
+		</header>
+		<a href="" class="icon other fa-arrow-up" data-ng-click="toTop()" du-smooth-scroll></span> Go to Top</a>
+		<hr />
+		<div class="row 150%" id="contatos">
+			<div class="6u">
+
+				<!-- Contact Form -->
+				<section>
+					<form method="post" action="#">
+						<div class="row 50%">
+							<div class="6u">
+								<input type="text" name="name" id="contact-name" placeholder="Nome" />
+							</div>
+							<div class="6u">
+								<input type="text" name="email" id="contact-email" placeholder="Email" />
+							</div>
+						</div>
+						<div class="row 50%">
+							<div class="12u">
+								<textarea name="message" id="contact-message" placeholder="Mensagem" rows="4"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<ul class="actions">
+									<li><input type="submit" class="style1" value="Enviar" /></li>
+									<li><input type="reset" class="style2" value="Reset" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</section>
+
+			</div>
+			<div class="6u">
+
+				<!-- Contact -->
+				<section class="feature-list small">
+					<div class="row">
+						<div class="6u">
+							<section>
+								<h3 class="icon fa-home">Mailing Address</h3>
+								<p>
+									Tuna de Medicina do Porto<br />
+									Alameda Professor Hernâni Monteiro<br />
+									4200-319 Porto
+								</p>
+							</section>
+						</div>
+						<div class="6u">
+							<section>
+								<h3 class="icon fa-comment">Social</h3>
+								<p>
+									<a href="#">tuna@med.up.pt</a><br />
+									<!-- <a href="#">linkedin.com/untitled</a><br /> -->
+									<a href="#">https://www.facebook.com/TunaMedicinaPorto</a>
+								</p>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="6u">
+							<section>
+								<h3 class="icon fa-envelope">Email</h3>
+								<p>
+									<a href="#">tunamed@gmail.com</a>
+								</p>
+							</section>
+						</div>
+						<div class="6u">
+							<section>
+								<h3 class="icon fa-phone">Phone</h3>
+								<p>
+									(351) 927 376 773
+								</p>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<hr />
+	<div id="map-canvas">
+		<map center="[41.181425, -8.601220]" zoom ="16" min-zoom ="16" max-zoom="16" disable-default-u-i="true" disable-double-click-zoom="true" draggable="false">
+			<marker
+					position="[41.181425, -8.601220]"
+					title="Tuna de Medicina do Porto"
+					animation="Animation.BOUNCE"
+					draggable="true"
+					visible="true">
+			</marker>
+		</map>
+	</div>
+	<div id="copyright">
+		<ul>
+			<li>&copy; TMP</li><li>Design: <a href="https://github.com/Jflima92">Jorge Lima</a></li>
+		</ul>
+	</div>
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/flexslider/jquery.flexslider-min.js"></script>
+<script src ="bower_components/angular-scroll/angular-scroll.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular-flexslider/angular-flexslider.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+<script src="bower_components/angular-media-player/dist/angular-media-player.min.js"></script>
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="app.js"></script>
+
+
+</body>
+</html>
