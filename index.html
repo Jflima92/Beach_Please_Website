@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 
-<html ng-app="medApp">
+<html ng-app="beachApp">
 <head>
-	<title>Tuna de Medicina do Porto</title>
+	<title>Beach Please</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -56,85 +56,23 @@
 	<div class="title">The Application</div>
 	<div id="main" class="container">
 
-		<!-- Image
-            <a href="#" class="image featured">
-                <img src="images/pic01.jpg" alt="" />
-            </a>
-
-        <!-- Features
-            <section id="features">
-                <header class="style1">
-                    <h2>Dolor consequat feugiat amet veroeros</h2>
-                    <p>Feugiat dolor nullam orci pretium phasellus justo</p>
-                </header>
-                <div class="feature-list">
-                    <div class="row">
-                        <div class="6u">
-                            <section>
-                                <h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                            </section>
-                        </div>
-                        <div class="6u">
-                            <section>
-                                <h3 class="icon fa-refresh">Lorem ipsum dolor sit veroeros</h3>
-                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="6u">
-                            <section>
-                                <h3 class="icon fa-picture-o">Pretium phasellus justo lorem</h3>
-                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                            </section>
-                        </div>
-                        <div class="6u">
-                            <section>
-                                <h3 class="icon fa-cog">Tempus sed pretium orci</h3>
-                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="6u">
-                            <section>
-                                <h3 class="icon fa-wrench">Aliquam consequat et feugiat</h3>
-                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                            </section>
-                        </div>
-                        <div class="6u">
-                            <section>
-                                <h3 class="icon fa-check">Dolore laoreet aliquam mattis</h3>
-                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-                <ul class="actions actions-centered">
-                    <li><a href="#" class="button style1 big">Get Started</a></li>
-                    <li><a href="#" class="button style2 big">More Info</a></li>
-                </ul>
-            </section> -->
 		<a href="" class="icon other fa-arrow-up"  data-ng-click="toTop()" du-smooth-scroll></span> Go to Top</a>
 	</div>
 </div>
 
 <!-- Intro -->
 <div id="intro-wrapper" class="wrapper style1">
-	<div class="title" >Features</div>
+	<div class="title" >Gallery</div>
 	<section id="intro" class="container">
-		<!-- <p class="style1">So in case you were wondering what this is all about ...</p>
-        <p class="style2">
-            Escape Velocity is a free responsive<br class="mobile-hide" />
-            site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
-        </p>
-        <p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
-        free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
-        your personal or commercial projects &ndash; just be sure to credit us!</p>
-        <ul class="actions">
-            <li><a href="#" class="button style3 big">Proceed</a></li>
-        </ul> -->
+			<header class="style1">
+
+				<flex-slider class="carousel" slide="s in slides" animation="slide"  animation-loop=false easing="swing" item-width="400" item-margin="5" minItems = "4" maxItems="4">
+					<li>
+						<img data-ng-src="{{s}}">
+					</li>
+				</flex-slider>
+			</header>
+
 
 		<a href="" class="icon fa-arrow-up" data-ng-click="toTop()"></span> Go to Top</a>
 
@@ -142,48 +80,18 @@
 	</section>
 </div>
 
+<!--
 
-<!-- Highlights -->
+&lt;!&ndash; Highlights &ndash;&gt;
 <div class="wrapper style3" id ="eventos">
 	<div class="title">Screenshots</div>
 	<div id="highlights" class="container">
-		<!-- <div class="row 150%">
-            <div class="4u">
-                <section class="highlight">
-                    <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-                    <h3><a href="#">Aliquam diam consequat</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button style1">Learn More</a></li>
-                    </ul>
-                </section>
-            </div>
-            <div class="4u">
-                <section class="highlight">
-                    <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                    <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button style1">Learn More</a></li>
-                    </ul>
-                </section>
-            </div>
-            <div class="4u">
-                <section class="highlight">
-                    <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                    <h3><a href="#">Mattis tempus lorem</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button style1">Learn More</a></li>
-                    </ul>
-                </section>
-            </div>
-        </div>-->
+
 		<a href="" class="icon other fa-arrow-up" data-ng-click="toTop()" du-smooth-scroll></span> Go to Top</a>
 	</div>
 </div>
 
-<!-- Músicas -->
+&lt;!&ndash; Músicas &ndash;&gt;
 <div class="wrapper style2" id ="musicas">
 	<div class="title">Live Demonstration</div>
 	<div id="musics" class="container">
@@ -243,52 +151,21 @@
 			</tbody>
 		</table>
 
-			<!-- <div class="row 150%">
-            <div class="4u">
-                <section class="highlight">
-                    <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-                    <h3><a href="#">Aliquam diam consequat</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button style1">Learn More</a></li>
-                    </ul>
-                </section>
-            </div>
-            <div class="4u">
-                <section class="highlight">
-                    <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                    <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button style1">Learn More</a></li>
-                    </ul>
-                </section>
-            </div>
-            <div class="4u">
-                <section class="highlight">
-                    <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                    <h3><a href="#">Mattis tempus lorem</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button style1">Learn More</a></li>
-                    </ul>
-                </section>
-            </div>
-        </div>-->
+
 		<a href="" class="icon other fa-arrow-up" data-ng-click="toTop()" du-smooth-scroll></span> Go to Top</a>
 	</div>
 </div>
 
-<!-- Footer -->
+&lt;!&ndash; Footer &ndash;&gt;
 <div id="footer-wrapper" class="wrapper">
 	<div class="title">Galery</div>
 	<div id="footer" class="container">
 		<header class="style1">
-			<!-- <h2>Ipsum sapien elementum portitor?</h2>
+			&lt;!&ndash; <h2>Ipsum sapien elementum portitor?</h2>
             <p>
                 Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
                 Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat.
-            </p>-->
+            </p>&ndash;&gt;
 
 			<flex-slider class="carousel" slide="s in slides" animation="slide"  animation-loop=false easing="swing" item-width="400" item-margin="5" minItems = "4" maxItems="4">
 				<li>
@@ -301,7 +178,7 @@
 		<div class="row 150%" id="contatos">
 			<div class="6u">
 
-				<!-- Contact Form -->
+				&lt;!&ndash; Contact Form &ndash;&gt;
 				<section>
 					<form method="post" action="#">
 						<div class="row 50%">
@@ -331,7 +208,7 @@
 			</div>
 			<div class="6u">
 
-				<!-- Contact -->
+				&lt;!&ndash; Contact &ndash;&gt;
 				<section class="feature-list small">
 					<div class="row">
 						<div class="6u">
@@ -349,7 +226,7 @@
 								<h3 class="icon fa-comment">Social</h3>
 								<p>
 									<a href="#">tuna@med.up.pt</a><br />
-									<!-- <a href="#">linkedin.com/untitled</a><br /> -->
+									&lt;!&ndash; <a href="#">linkedin.com/untitled</a><br /> &ndash;&gt;
 									<a href="#">https://www.facebook.com/TunaMedicinaPorto</a>
 								</p>
 							</section>
@@ -396,6 +273,7 @@
 		</ul>
 	</div>
 </div>
+-->
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/flexslider/jquery.flexslider-min.js"></script>
